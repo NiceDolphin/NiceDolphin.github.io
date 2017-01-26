@@ -1,0 +1,18 @@
+body{
+	background-color:skyblue;
+	text-align:center;
+}
+
+#container{
+	background-color:orange;
+	margin:50px;
+	border-radius:25px;
+	padding:10px;
+}	
+#content{
+	color:red;
+}
+
+img{
+	height:250px;
+}

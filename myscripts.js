@@ -12,9 +12,9 @@ function getNumbers(){
     var userSum = document.getElementById("userAnswer").value;
     var sum = operand1 + operand2;
     if(userSum == sum){
-     document.getElementById("results").innerHTML="Correct!";
+      document.getElementById("results").innerHTML="Correct!";
     }
     else{
-     document.getElementById("results").innerHTML="Wrong!";
+      document.getElementById("results").innerHTML="Wrong!";
     }
   }

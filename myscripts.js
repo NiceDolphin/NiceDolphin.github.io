@@ -11,7 +11,7 @@ function chooseO(){
 function makeMove(divLocation){
   var insideDiv = documet.getElementById(divLocation).innerHTML;
   
-  if(insideDiv == ""){
+  if(insideDiv === ""){
     document.getElementById(divLocation).innerHTML=character;
     document.getElementById("notes").innerHTML="";
   }

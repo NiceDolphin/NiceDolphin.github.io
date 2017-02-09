@@ -9,7 +9,7 @@ function chooseO(){
 }
 
 function makeMove(divLocation){
-  var insideDiv = documet.getElementById(divLocation).innerHTML;
+  var insideDiv = document.getElementById(divLocation).innerHTML;
   
   if(insideDiv === ""){
     document.getElementById(divLocation).innerHTML=character;

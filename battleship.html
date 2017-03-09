@@ -1,7 +1,7 @@
 <html><head>
     <title>Battleship</title>
     <link rel="stylesheet" type="text/css" href="battleship.css">
-    <script src="myscripts.js"></script>
+    <script src="battleship.js"></script>
   </head>
   <body>
     <div id="container">
@@ -10,15 +10,18 @@
         <a href="aboutme.html">About Me</a> |
         <a href="projects.html">Projects</a>
      </div>
+
      <div id="game">
-				<div id="players2">
-						<input type="button" value="00" onclick="choose2()">
-						<input type="button" value="000" onclick="choose3()">
-            <input type="button" value="0000" onclick="choose4()">'
-            <input type="button" value="00000" onclick="choose5()">
-            <input type="button" value="O" onclick="chooseO()">
+			 <div>
+				 Battleship: If you dont know how to play then go then click <a href="http://www.hasbro.com/common/instruct/Battleship.PDF">here.</a>
+			 </div>
+			 <div id="pto">
+       <h1>
+        Your ships
+      </h1>
+				<div id="players">
+						<input type="button" value="#" onclick="choose2()">
            
-						<p id="notes"></p>
 				</div>
       	<div class="boards">
 					<div>
@@ -148,7 +151,15 @@
              <div class="box" id="row10col10" onclick="makeMove('row10col10')"></div>
             
 					</div>
-				</div>
+       </div>
+			 </div>
+			 <div id="ptt">
+       <div>
+         <h1>
+           Make your guesses
+         </h1>
+         <input type="button" value="O" onclick="chooseO()">
+       </div>
 
           <div class="boards">
 					<div>
@@ -278,6 +289,7 @@
              <div class="box" id="row10col10" onclick="makeMove('row10col10')"></div>
             
 					</div>
+				 </div>
 				</div>
       </div>
     </div>

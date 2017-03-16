@@ -1,10 +1,10 @@
-
+<html>
   <head>
     <title>Battleship</title>
     <link rel="stylesheet" type="text/css" href="battleship.css">
     <script src="battleship.js"></script>
   </head>
-  <body>
+  <body onload="alert('pick your ships, place 10.')">
     <div id="container">
 	    <div id="navigation">
         <a href="index.html"> Home </a> |
@@ -14,140 +14,140 @@
 
      <div id="game">
 			 
-			 <div id = pto>
+			 <div id = "pto">
        <h1>
         Your ship
       </h1>
 				<div id="players">
-						<input type="button" value="Place your ships:#" onclick="choose2()"/>
+						<!--<input type="button" value="Place your ships:#" onclick="choose2()"/>-->
            
 				</div>
       	<div class="boards">
 					<div>
-						<div class="box" id="row1col1" onclick="makeMove('row1col1')"></div>
-						 <div class="box" id="row1col2" onclick="makeMove('row1col2')"></div>
-						 <div class="box" id="row1col3" onclick="makeMove('row1col3')"></div>
-            <div class="box" id="row1col4" onclick="makeMove('row1col4')"></div>
-            <div class="box" id="row1col5" onclick="makeMove('row1col5')"></div>
-            <div class="box" id="row1col6" onclick="makeMove('row1col6')"></div>
-            <div class="box" id="row1col7" onclick="makeMove('row1col7')"></div>
-            <div class="box" id="row1col8" onclick="makeMove('row1col8')"></div>
-            <div class="box" id="row1col9" onclick="makeMove('row1col9')"></div>
-            <div class="box" id="row1col10" onclick="makeMove('row1col10')"></div>
+						<div class="box" id="row1col1" onclick="makeMove('row1col1','player')"></div>
+						 <div class="box" id="row1col2" onclick="makeMove('row1col2','player')"></div>
+						 <div class="box" id="row1col3" onclick="makeMove('row1col3','player')"></div>
+            <div class="box" id="row1col4" onclick="makeMove('row1col4','player')"></div>
+            <div class="box" id="row1col5" onclick="makeMove('row1col5','player')"></div>
+            <div class="box" id="row1col6" onclick="makeMove('row1col6','player')"></div>
+            <div class="box" id="row1col7" onclick="makeMove('row1col7','player')"></div>
+            <div class="box" id="row1col8" onclick="makeMove('row1col8','player')"></div>
+            <div class="box" id="row1col9" onclick="makeMove('row1col9','player')"></div>
+            <div class="box" id="row1col10" onclick="makeMove('row1col10','player')"></div>
 					</div>
 					<div>
-						<div class="box" id="row2col1" onclick="makeMove('row2col1')"></div>
-						 <div class="box" id="row2col2" onclick="makeMove('row2col2')"></div>
-						 <div class="box" id="row2col3" onclick="makeMove('row2col3')"></div>
-             <div class="box" id="row2col4" onclick="makeMove('row2col4')"></div>
-             <div class="box" id="row2col5" onclick="makeMove('row2col5')"></div>
-             <div class="box" id="row2col6" onclick="makeMove('row2col6')"></div>
-             <div class="box" id="row2col7" onclick="makeMove('row2col7')"></div>
-             <div class="box" id="row2col8" onclick="makeMove('row2col8')"></div>
-             <div class="box" id="row2col9" onclick="makeMove('row2col9')"></div>
-             <div class="box" id="row2col10" onclick="makeMove('row2col10')"></div>
+						<div class="box" id="row2col1" onclick="makeMove('row2col1','player')"></div>
+						 <div class="box" id="row2col2" onclick="makeMove('row2col2','player')"></div>
+						 <div class="box" id="row2col3" onclick="makeMove('row2col3','player')"></div>
+             <div class="box" id="row2col4" onclick="makeMove('row2col4','player')"></div>
+             <div class="box" id="row2col5" onclick="makeMove('row2col5','player')"></div>
+             <div class="box" id="row2col6" onclick="makeMove('row2col6','player')"></div>
+             <div class="box" id="row2col7" onclick="makeMove('row2col7','player')"></div>
+             <div class="box" id="row2col8" onclick="makeMove('row2col8','player')"></div>
+             <div class="box" id="row2col9" onclick="makeMove('row2col9','player')"></div>
+             <div class="box" id="row2col10" onclick="makeMove('row2col10','player')"></div>
 					</div>
 					<div>
-						<div class="box" id="row3col1" onclick="makeMove('row3col1')"></div>
-						 <div class="box" id="row3col2" onclick="makeMove('row3col2')"></div>
-						 <div class="box" id="row3col3" onclick="makeMove('row3col3')"></div>
-             <div class="box" id="row3col4" onclick="makeMove('row3col4')"></div>
-             <div class="box" id="row3col5" onclick="makeMove('row3col5')"></div>
-             <div class="box" id="row3col6" onclick="makeMove('row3col6')"></div>
-             <div class="box" id="row3col7" onclick="makeMove('row3col7')"></div>
-             <div class="box" id="row3col8" onclick="makeMove('row3col8')"></div>
-             <div class="box" id="row3col9" onclick="makeMove('row3col9')"></div>
-             <div class="box" id="row3col10" onclick="makeMove('row3col10')"></div>
+						<div class="box" id="row3col1" onclick="makeMove('row3col1','player')"></div>
+						 <div class="box" id="row3col2" onclick="makeMove('row3col2','player')"></div>
+						 <div class="box" id="row3col3" onclick="makeMove('row3col3','player')"></div>
+             <div class="box" id="row3col4" onclick="makeMove('row3col4','player')"></div>
+             <div class="box" id="row3col5" onclick="makeMove('row3col5','player')"></div>
+             <div class="box" id="row3col6" onclick="makeMove('row3col6','player')"></div>
+             <div class="box" id="row3col7" onclick="makeMove('row3col7','player')"></div>
+             <div class="box" id="row3col8" onclick="makeMove('row3col8','player')"></div>
+             <div class="box" id="row3col9" onclick="makeMove('row3col9','player')"></div>
+             <div class="box" id="row3col10" onclick="makeMove('row3col10','player')"></div>
             
 					</div>
           <div>
-						<div class="box" id="row4col1" onclick="makeMove('row4col1')"></div>
-						 <div class="box" id="row4col2" onclick="makeMove('row4col2')"></div>
-						 <div class="box" id="row4col3" onclick="makeMove('row4col3')"></div>
-             <div class="box" id="row4col4" onclick="makeMove('row4col4')"></div>
-             <div class="box" id="row4col5" onclick="makeMove('row4col5')"></div>
-             <div class="box" id="row4col6" onclick="makeMove('row4col6')"></div>
-             <div class="box" id="row4col7" onclick="makeMove('row3col7')"></div>
-             <div class="box" id="row4col8" onclick="makeMove('row4col8')"></div>
-             <div class="box" id="row4col9" onclick="makeMove('row4col9')"></div>
-             <div class="box" id="row4col10" onclick="makeMove('row4col10')"></div>
+						<div class="box" id="row4col1" onclick="makeMove('row4col1','player')"></div>
+						 <div class="box" id="row4col2" onclick="makeMove('row4col2','player')"></div>
+						 <div class="box" id="row4col3" onclick="makeMove('row4col3','player')"></div>
+             <div class="box" id="row4col4" onclick="makeMove('row4col4','player')"></div>
+             <div class="box" id="row4col5" onclick="makeMove('row4col5','player')"></div>
+             <div class="box" id="row4col6" onclick="makeMove('row4col6','player')"></div>
+             <div class="box" id="row4col7" onclick="makeMove('row4col7','player')"></div>
+             <div class="box" id="row4col8" onclick="makeMove('row4col8','player')"></div>
+             <div class="box" id="row4col9" onclick="makeMove('row4col9','player')"></div>
+             <div class="box" id="row4col10" onclick="makeMove('row4col10','player')"></div>
             
 					</div>
           <div>
-						<div class="box" id="row5col1" onclick="makeMove('row5col1')"></div>
-						 <div class="box" id="row5col2" onclick="makeMove('row5col2')"></div>
-						 <div class="box" id="row5col3" onclick="makeMove('row5col3')"></div>
-             <div class="box" id="row5col4" onclick="makeMove('row5col4')"></div>
-             <div class="box" id="row5col5" onclick="makeMove('row5col5')"></div>
-             <div class="box" id="row5col6" onclick="makeMove('row5col6')"></div>
-             <div class="box" id="row5col7" onclick="makeMove('row5col7')"></div>
-             <div class="box" id="row5col8" onclick="makeMove('row5col8')"></div>
-             <div class="box" id="row5col9" onclick="makeMove('row5col9')"></div>
-             <div class="box" id="row5col10" onclick="makeMove('row5col10')"></div>
+						<div class="box" id="row5col1" onclick="makeMove('row5col1','player')"></div>
+						 <div class="box" id="row5col2" onclick="makeMove('row5col2','player')"></div>
+						 <div class="box" id="row5col3" onclick="makeMove('row5col3','player')"></div>
+             <div class="box" id="row5col4" onclick="makeMove('row5col4','player')"></div>
+             <div class="box" id="row5col5" onclick="makeMove('row5col5','player')"></div>
+             <div class="box" id="row5col6" onclick="makeMove('row5col6','player')"></div>
+             <div class="box" id="row5col7" onclick="makeMove('row5col7','player')"></div>
+             <div class="box" id="row5col8" onclick="makeMove('row5col8','player')"></div>
+             <div class="box" id="row5col9" onclick="makeMove('row5col9','player')"></div>
+             <div class="box" id="row5col10" onclick="makeMove('row5col10','player')"></div>
 					</div>
           <div>
-						<div class="box" id="row6col1" onclick="makeMove('row6col1')"></div>
-						 <div class="box" id="row6col2" onclick="makeMove('row6col2')"></div>
-						 <div class="box" id="row6col3" onclick="makeMove('row6col3')"></div>
-             <div class="box" id="row6col4" onclick="makeMove('row6col4')"></div>
-             <div class="box" id="row6col5" onclick="makeMove('row6col5')"></div>
-             <div class="box" id="row6col6" onclick="makeMove('row6col6')"></div>
-             <div class="box" id="row6col7" onclick="makeMove('row6col7')"></div>
-             <div class="box" id="row6col8" onclick="makeMove('row6col8')"></div>
-             <div class="box" id="row6col9" onclick="makeMove('row6col9')"></div>
-             <div class="box" id="row6col10" onclick="makeMove('row6col10')"></div>
+						<div class="box" id="row6col1" onclick="makeMove('row6col1','player')"></div>
+						 <div class="box" id="row6col2" onclick="makeMove('row6col2','player')"></div>
+						 <div class="box" id="row6col3" onclick="makeMove('row6col3','player')"></div>
+             <div class="box" id="row6col4" onclick="makeMove('row6col4','player')"></div>
+             <div class="box" id="row6col5" onclick="makeMove('row6col5','player')"></div>
+             <div class="box" id="row6col6" onclick="makeMove('row6col6','player')"></div>
+             <div class="box" id="row6col7" onclick="makeMove('row6col7','player')"></div>
+             <div class="box" id="row6col8" onclick="makeMove('row6col8','player')"></div>
+             <div class="box" id="row6col9" onclick="makeMove('row6col9','player')"></div>
+             <div class="box" id="row6col10" onclick="makeMove('row6col10','player')"></div>
             
 					</div>
          <div>
-						<div class="box" id="row7col1" onclick="makeMove('row7col1')"></div>
-						 <div class="box" id="row7col2" onclick="makeMove('row7col2')"></div>
-						 <div class="box" id="row7col3" onclick="makeMove('row7col3')"></div>
-             <div class="box" id="row7col4" onclick="makeMove('row7col4')"></div>
-             <div class="box" id="row7col5" onclick="makeMove('row7col5')"></div>
-             <div class="box" id="row7col6" onclick="makeMove('row7col6')"></div>
-             <div class="box" id="row7col7" onclick="makeMove('row7col7')"></div>
-             <div class="box" id="row7col8" onclick="makeMove('row7col8')"></div>
-             <div class="box" id="row7col9" onclick="makeMove('row7col9')"></div>
-             <div class="box" id="row7col10" onclick="makeMove('row7col10')"></div>
+						<div class="box" id="row7col1" onclick="makeMove('row7col1','player')"></div>
+						 <div class="box" id="row7col2" onclick="makeMove('row7col2','player')"></div>
+						 <div class="box" id="row7col3" onclick="makeMove('row7col3','player')"></div>
+             <div class="box" id="row7col4" onclick="makeMove('row7col4','player')"></div>
+             <div class="box" id="row7col5" onclick="makeMove('row7col5','player')"></div>
+             <div class="box" id="row7col6" onclick="makeMove('row7col6','player')"></div>
+             <div class="box" id="row7col7" onclick="makeMove('row7col7','player')"></div>
+             <div class="box" id="row7col8" onclick="makeMove('row7col8','player')"></div>
+             <div class="box" id="row7col9" onclick="makeMove('row7col9','player')"></div>
+             <div class="box" id="row7col10" onclick="makeMove('row7col10','player')"></div>
             
 					</div>
          <div>
-						<div class="box" id="row8col1" onclick="makeMove('row8col1')"></div>
-						 <div class="box" id="row8col2" onclick="makeMove('row8col2')"></div>
-						 <div class="box" id="row8col3" onclick="makeMove('row8col3')"></div>
-             <div class="box" id="row8col4" onclick="makeMove('row8col4')"></div>
-             <div class="box" id="row8col5" onclick="makeMove('row8col5')"></div>
-             <div class="box" id="row8col6" onclick="makeMove('row8col6')"></div>
-             <div class="box" id="row8col7" onclick="makeMove('row8col7')"></div>
-             <div class="box" id="row8col8" onclick="makeMove('row8col8')"></div>
-             <div class="box" id="row8col9" onclick="makeMove('row8col9')"></div>
-             <div class="box" id="row8col10" onclick="makeMove('row8col10')"></div>
+						<div class="box" id="row8col1" onclick="makeMove('row8col1','player')"></div>
+						 <div class="box" id="row8col2" onclick="makeMove('row8col2','player')"></div>
+						 <div class="box" id="row8col3" onclick="makeMove('row8col3','player')"></div>
+             <div class="box" id="row8col4" onclick="makeMove('row8col4','player')"></div>
+             <div class="box" id="row8col5" onclick="makeMove('row8col5','player')"></div>
+             <div class="box" id="row8col6" onclick="makeMove('row8col6','player')"></div>
+             <div class="box" id="row8col7" onclick="makeMove('row8col7','player')"></div>
+             <div class="box" id="row8col8" onclick="makeMove('row8col8','player')"></div>
+             <div class="box" id="row8col9" onclick="makeMove('row8col9','player')"></div>
+             <div class="box" id="row8col10" onclick="makeMove('row8col10','player')"></div>
             
 					</div>
           <div>
-						<div class="box" id="row9col1" onclick="makeMove('row9col1')"></div>
-						 <div class="box" id="row9col2" onclick="makeMove('row9col2')"></div>
-						 <div class="box" id="row9col3" onclick="makeMove('row9col3')"></div>
-             <div class="box" id="row9col4" onclick="makeMove('row9col4')"></div>
-             <div class="box" id="row9col5" onclick="makeMove('row9col5')"></div>
-             <div class="box" id="row9col6" onclick="makeMove('row9col6')"></div>
-             <div class="box" id="row9col7" onclick="makeMove('row9col7')"></div>
-             <div class="box" id="row9col8" onclick="makeMove('row9col8')"></div>
-             <div class="box" id="row9col9" onclick="makeMove('row9col9')"></div>
-             <div class="box" id="row9col10" onclick="makeMove('row9col10')"></div>
+						<div class="box" id="row9col1" onclick="makeMove('row9col1','player')"></div>
+						 <div class="box" id="row9col2" onclick="makeMove('row9col2','player')"></div>
+						 <div class="box" id="row9col3" onclick="makeMove('row9col3','player')"></div>
+             <div class="box" id="row9col4" onclick="makeMove('row9col4','player')"></div>
+             <div class="box" id="row9col5" onclick="makeMove('row9col5','player')"></div>
+             <div class="box" id="row9col6" onclick="makeMove('row9col6','player')"></div>
+             <div class="box" id="row9col7" onclick="makeMove('row9col7','player')"></div>
+             <div class="box" id="row9col8" onclick="makeMove('row9col8','player')"></div>
+             <div class="box" id="row9col9" onclick="makeMove('row9col9','player')"></div>
+             <div class="box" id="row9col10" onclick="makeMove('row9col10','player')"></div>
             
 					</div>
           <div>
-						<div class="box" id="row10col1" onclick="makeMove('row10col1')"></div>
-						 <div class="box" id="row10col2" onclick="makeMove('row10col2')"></div>
-						 <div class="box" id="row10col3" onclick="makeMove('row10col3')"></div>
-             <div class="box" id="row10col4" onclick="makeMove('row10col4')"></div>
-             <div class="box" id="row10col5" onclick="makeMove('row10col5')"></div>
-             <div class="box" id="row10col6" onclick="makeMove('row10col6')"></div>
-             <div class="box" id="row10col7" onclick="makeMove('row10col7')"></div>
-             <div class="box" id="row10col8" onclick="makeMove('row10col8')"></div>
-             <div class="box" id="row10col9" onclick="makeMove('row10col9')"></div>
-             <div class="box" id="row10col10" onclick="makeMove('row10col10')"></div>
+						<div class="box" id="row10col1" onclick="makeMove('row10col1','player')"></div>
+						 <div class="box" id="row10col2" onclick="makeMove('row10col2','player')"></div>
+						 <div class="box" id="row10col3" onclick="makeMove('row10col3','player')"></div>
+             <div class="box" id="row10col4" onclick="makeMove('row10col4','player')"></div>
+             <div class="box" id="row10col5" onclick="makeMove('row10col5','player')"></div>
+             <div class="box" id="row10col6" onclick="makeMove('row10col6','player')"></div>
+             <div class="box" id="row10col7" onclick="makeMove('row10col7','player')"></div>
+             <div class="box" id="row10col8" onclick="makeMove('row10col8','player')"></div>
+             <div class="box" id="row10col9" onclick="makeMove('row10col9','player')"></div>
+             <div class="box" id="row10col10" onclick="makeMove('row10col10','player')"></div>
             
 					</div>
        </div>
@@ -162,130 +162,130 @@
 
           <div class="boards">
 					<div>
-					 	<div class="box" id="row1col1" onclick="makeMove('row1col1')"></div>
-						 <div class="box" id="row1col2" onclick="makeMove('row1col2')"></div>
-						 <div class="box" id="row1col3" onclick="makeMove('row1col3')"></div>
-            <div class="box" id="row1col4" onclick="makeMove('row1col4')"></div>
-            <div class="box" id="row1col5" onclick="makeMove('row1col5')"></div>
-            <div class="box" id="row1col6" onclick="makeMove('row1col6')"></div>
-            <div class="box" id="row1col7" onclick="makeMove('row1col7')"></div>
-            <div class="box" id="row1col8" onclick="makeMove('row1col8')"></div>
-            <div class="box" id="row1col9" onclick="makeMove('row1col9')"></div>
-            <div class="box" id="row1col10" onclick="makeMove('row1col10')"></div>
+						<div class="box" id="row1col1a" onclick="makeMove('row1col1a','ai')"></div>
+						 <div class="box" id="row1col2a" onclick="makeMove('row1col2a','ai')"></div>
+						 <div class="box" id="row1col3a" onclick="makeMove('row1col3a','ai')"></div>
+            <div class="box" id="row1col4a" onclick="makeMove('row1col4a','ai')"></div>
+            <div class="box" id="row1col5a" onclick="makeMove('row1col5a','ai')"></div>
+            <div class="box" id="row1col6a" onclick="makeMove('row1col6a','ai')"></div>
+            <div class="box" id="row1col7a" onclick="makeMove('row1col7a','ai')"></div>
+            <div class="box" id="row1col8a" onclick="makeMove('row1col8a','ai')"></div>
+            <div class="box" id="row1col9a" onclick="makeMove('row1col9a','ai')"></div>
+            <div class="box" id="row1col10a" onclick="makeMove('row1col10a','ai')"></div>
 					</div>
 					<div>
-						<div class="box" id="row2col1" onclick="makeMove('row2col1')"></div>
-						 <div class="box" id="row2col2" onclick="makeMove('row2col2')"></div>
-						 <div class="box" id="row2col3" onclick="makeMove('row2col3')"></div>
-             <div class="box" id="row2col4" onclick="makeMove('row2col4')"></div>
-             <div class="box" id="row2col5" onclick="makeMove('row2col5')"></div>
-             <div class="box" id="row2col6" onclick="makeMove('row2col6')"></div>
-             <div class="box" id="row2col7" onclick="makeMove('row2col7')"></div>
-             <div class="box" id="row2col8" onclick="makeMove('row2col8')"></div>
-             <div class="box" id="row2col9" onclick="makeMove('row2col9')"></div>
-             <div class="box" id="row2col10" onclick="makeMove('row2col10')"></div>
+						<div class="box" id="row2col1a" onclick="makeMove('row2col1a','ai')"></div>
+						 <div class="box" id="row2col2a" onclick="makeMove('row2col2a','ai')"></div>
+						 <div class="box" id="row2col3a" onclick="makeMove('row2col3a','ai')"></div>
+             <div class="box" id="row2col4a" onclick="makeMove('row2col4a','ai')"></div>
+             <div class="box" id="row2col5a" onclick="makeMove('row2col5a','ai')"></div>
+             <div class="box" id="row2col6a" onclick="makeMove('row2col6a','ai')"></div>
+             <div class="box" id="row2col7a" onclick="makeMove('row2col7a','ai')"></div>
+             <div class="box" id="row2col8a" onclick="makeMove('row2col8a','ai')"></div>
+             <div class="box" id="row2col9a" onclick="makeMove('row2col9a','ai')"></div>
+             <div class="box" id="row2col10a" onclick="makeMove('row2col10a','ai')">x</div>
 					</div>
 					<div>
-						<div class="box" id="row3col1" onclick="makeMove('row3col1', 'player')"></div>
-						 <div class="box" id="row3col2" onclick="makeMove('row3col2', 'player')"></div>
-						 <div class="box" id="row3col3" onclick="makeMove('row3col3', 'player')"></div>
-             <div class="box" id="row3col4" onclick="makeMove('row3col4', 'player')"></div>
-             <div class="box" id="row3col5" onclick="makeMove('row3col5', 'player')"></div>
-             <div class="box" id="row3col6" onclick="makeMove('row3col6', 'player')"></div>
-             <div class="box" id="row3col7" onclick="makeMove('row3col7', 'player')"></div>
-             <div class="box" id="row3col8" onclick="makeMove('row3col8', 'player')"></div>
-             <div class="box" id="row3col9" onclick="makeMove('row3col9', 'player')"></div>
-             <div class="box" id="row3col10" onclick="makeMove('row3col10', 'player')"></div>
+						<div class="box" id="row3col1a" onclick="makeMove('row3col1a','ai')"></div>
+						 <div class="box" id="row3col2a" onclick="makeMove('row3col2a','ai')"></div>
+						 <div class="box" id="row3col3a" onclick="makeMove('row3col3a','ai')"></div>
+             <div class="box" id="row3col4a" onclick="makeMove('row3col4a','ai')"></div>
+             <div class="box" id="row3col5a" onclick="makeMove('row3col5a','ai')"></div>
+             <div class="box" id="row3col6a" onclick="makeMove('row3col6a','ai')"></div>
+             <div class="box" id="row3col7a" onclick="makeMove('row3col7a','ai')"></div>
+             <div class="box" id="row3col8a" onclick="makeMove('row3col8a','ai')"></div>
+             <div class="box" id="row3col9a" onclick="makeMove('row3col9a','ai')"></div>
+             <div class="box" id="row3col10a" onclick="makeMove('row3col10a','ai')"></div>
             
 					</div>
           <div>
-						<div class="box" id="row4col1" onclick="makeMove('row4col1', 'player')"></div>
-						 <div class="box" id="row4col2" onclick="makeMove('row4col2', 'player')"></div>
-						 <div class="box" id="row4col3" onclick="makeMove('row4col3', 'player')"></div>
-             <div class="box" id="row4col4" onclick="makeMove('row4col4', 'player')"></div>
-             <div class="box" id="row4col5" onclick="makeMove('row4col5', 'player')"></div>
-             <div class="box" id="row4col6" onclick="makeMove('row4col6', 'player')"></div>
-             <div class="box" id="row4col7" onclick="makeMove('row3col7', 'player')"></div>
-             <div class="box" id="row4col8" onclick="makeMove('row4col8', 'player')"></div>
-             <div class="box" id="row4col9" onclick="makeMove('row4col9', 'player')"></div>
-             <div class="box" id="row4col10" onclick="makeMove('row4col10', 'player')"></div>
+						<div class="box" id="row4col1a" onclick="makeMove('row4col1a','ai')"></div>
+						 <div class="box" id="row4col2a" onclick="makeMove('row4col2a','ai')"></div>
+						 <div class="box" id="row4col3a" onclick="makeMove('row4col3a','ai')"></div>
+             <div class="box" id="row4col4a" onclick="makeMove('row4col4a','ai')"></div>
+             <div class="box" id="row4col5a" onclick="makeMove('row4col5a','ai')"></div>
+             <div class="box" id="row4col6a" onclick="makeMove('row4col6a','ai')"></div>
+             <div class="box" id="row4col7a" onclick="makeMove('row3col7a','ai')"></div>
+             <div class="box" id="row4col8a" onclick="makeMove('row4col8a','ai')"></div>
+             <div class="box" id="row4col9a" onclick="makeMove('row4col9a','ai')"></div>
+             <div class="box" id="row4col10a" onclick="makeMove('row4col10a','ai')"></div>
             
 					</div>
           <div>
-						<div class="box" id="row5col1" onclick="makeMove('row5col1', 'player')"></div>
-						 <div class="box" id="row5col2" onclick="makeMove('row5col2', 'player')"></div>
-						 <div class="box" id="row5col3" onclick="makeMove('row5col3', 'player')"></div>
-             <div class="box" id="row5col4" onclick="makeMove('row5col4', 'player')"></div>
-             <div class="box" id="row5col5" onclick="makeMove('row5col5', 'player')"></div>
-             <div class="box" id="row5col6" onclick="makeMove('row5col6', 'player')"></div>
-             <div class="box" id="row5col7" onclick="makeMove('row5col7', 'player')"></div>
-             <div class="box" id="row5col8" onclick="makeMove('row5col8', 'player')"></div>
-             <div class="box" id="row5col9" onclick="makeMove('row5col9', 'player')"></div>
-             <div class="box" id="row5col10" onclick="makeMove('row5col10', 'player')"></div>
+						<div class="box" id="row5col1a" onclick="makeMove('row5col1a','ai')"></div>
+						 <div class="box" id="row5col2a" onclick="makeMove('row5col2a','ai')"></div>
+						 <div class="box" id="row5col3a" onclick="makeMove('row5col3a','ai')"></div>
+             <div class="box" id="row5col4a" onclick="makeMove('row5col4a','ai')"></div>
+             <div class="box" id="row5col5a" onclick="makeMove('row5col5a',ai')"></div>
+             <div class="box" id="row5col6a" onclick="makeMove('row5col6a','ai')"></div>
+             <div class="box" id="row5col7a" onclick="makeMove('row5col7a','ai')"></div>
+             <div class="box" id="row5col8a" onclick="makeMove('row5col8a','ai')"></div>
+             <div class="box" id="row5col9a" onclick="makeMove('row5col9a','ai')"></div>
+             <div class="box" id="row5col10a" onclick="makeMove('row5col10a','ai')"></div>
 					</div>
           <div>
-						<div class="box" id="row6col1" onclick="makeMove('row6col1', 'player')"></div>
-						 <div class="box" id="row6col2" onclick="makeMove('row6col2', 'player')"></div>
-						 <div class="box" id="row6col3" onclick="makeMove('row6col3', 'player')"></div>
-             <div class="box" id="row6col4" onclick="makeMove('row6col4', 'player')"></div>
-             <div class="box" id="row6col5" onclick="makeMove('row6col5', 'player')"></div>
-             <div class="box" id="row6col6" onclick="makeMove('row6col6', 'player')"></div>
-             <div class="box" id="row6col7" onclick="makeMove('row6col7', 'player')"></div>
-             <div class="box" id="row6col8" onclick="makeMove('row6col8', 'player')"></div>
-             <div class="box" id="row6col9" onclick="makeMove('row6col9', 'player')"></div>
-             <div class="box" id="row6col10" onclick="makeMove('row6col10', 'player')"></div>
+						<div class="box" id="row6col1a" onclick="makeMove('row6col1a','ai')"></div>
+						 <div class="box" id="row6col2a" onclick="makeMove('row6col2a','ai')"></div>
+						 <div class="box" id="row6col3a" onclick="makeMove('row6col3a','ai')"></div>
+             <div class="box" id="row6col4a" onclick="makeMove('row6col4a','ai')"></div>
+             <div class="box" id="row6col5a" onclick="makeMove('row6col5a','ai')"></div>
+             <div class="box" id="row6col6a" onclick="makeMove('row6col6a','ai')"></div>
+             <div class="box" id="row6col7a" onclick="makeMove('row6col7a','ai')"></div>
+             <div class="box" id="row6col8a" onclick="makeMove('row6col8a','ai')"></div>
+             <div class="box" id="row6col9a" onclick="makeMove('row6col9a','ai')"></div>
+             <div class="box" id="row6col10a" onclick="makeMove('row6col10a','ai')"></div>
             
 					</div>
          <div>
-						<div class="box" id="row7col1" onclick="makeMove('row7col1', 'player')"></div>
-						 <div class="box" id="row7col2" onclick="makeMove('row7col2', 'player')"></div>
-						 <div class="box" id="row7col3" onclick="makeMove('row7col3', 'player')"></div>
-             <div class="box" id="row7col4" onclick="makeMove('row7col4', 'player')"></div>
-             <div class="box" id="row7col5" onclick="makeMove('row7col5', 'player')"></div>
-             <div class="box" id="row7col6" onclick="makeMove('row7col6', 'player')"></div>
-             <div class="box" id="row7col7" onclick="makeMove('row7col7', 'player')"></div>
-             <div class="box" id="row7col8" onclick="makeMove('row7col8', 'player')"></div>
-             <div class="box" id="row7col9" onclick="makeMove('row7col9', 'player')"></div>
-             <div class="box" id="row7col10" onclick="makeMove('row7col10', 'player')"></div>
+						<div class="box" id="row7col1a" onclick="makeMove('row7col1a','ai')"></div>
+						 <div class="box" id="row7col2a" onclick="makeMove('row7col2a','ai')"></div>
+						 <div class="box" id="row7col3a" onclick="makeMove('row7col3a','ai')"></div>
+             <div class="box" id="row7col4a" onclick="makeMove('row7col4a','ai')"></div>
+             <div class="box" id="row7col5a" onclick="makeMove('row7col5a','ai')"></div>
+             <div class="box" id="row7col6a" onclick="makeMove('row7col6a','ai')"></div>
+             <div class="box" id="row7col7a" onclick="makeMove('row7col7a','ai')"></div>
+             <div class="box" id="row7col8a" onclick="makeMove('row7col8a','ai')"></div>
+             <div class="box" id="row7col9a" onclick="makeMove('row7col9a','ai')"></div>
+             <div class="box" id="row7col10a" onclick="makeMove('row7col10a','ai')"></div>
             
 					</div>
          <div>
-						<div class="box" id="row8col1" onclick="makeMove('row8col1')"></div>
-						 <div class="box" id="row8col2" onclick="makeMove('row8col2')"></div>
-						 <div class="box" id="row8col3" onclick="makeMove('row8col3')"></div>
-             <div class="box" id="row8col4" onclick="makeMove('row8col4')"></div>
-             <div class="box" id="row8col5" onclick="makeMove('row8col5')"></div>
-             <div class="box" id="row8col6" onclick="makeMove('row8col6')"></div>
-             <div class="box" id="row8col7" onclick="makeMove('row8col7')"></div>
-             <div class="box" id="row8col8" onclick="makeMove('row8col8')"></div>
-             <div class="box" id="row8col9" onclick="makeMove('row8col9')"></div>
-             <div class="box" id="row8col10" onclick="makeMove('row8col10')"></div>
+						<div class="box" id="row8col1a" onclick="makeMove('row8col1a','ai')"></div>
+						 <div class="box" id="row8col2a" onclick="makeMove('row8col2a','ai')">x</div>
+						 <div class="box" id="row8col3a" onclick="makeMove('row8col3a','ai')"></div>
+             <div class="box" id="row8col4a" onclick="makeMove('row8col4a','ai')"></div>
+             <div class="box" id="row8col5a" onclick="makeMove('row8col5a','ai')"></div>
+             <div class="box" id="row8col6a" onclick="makeMove('row8col6a','ai')"></div>
+             <div class="box" id="row8col7a" onclick="makeMove('row8col7a','ai')"></div>
+             <div class="box" id="row8col8a" onclick="makeMove('row8col8a','ai')"></div>
+             <div class="box" id="row8col9a" onclick="makeMove('row8col9a','ai')"></div>
+             <div class="box" id="row8col10a" onclick="makeMove('row8col10a','ai')"></div>
             
 					</div>
           <div>
-						<div class="box" id="row9col1" onclick="makeMove('row9col1')"></div>
-						 <div class="box" id="row9col2" onclick="makeMove('row9col2')"></div>
-						 <div class="box" id="row9col3" onclick="makeMove('row9col3')"></div>
-             <div class="box" id="row9col4" onclick="makeMove('row9col4')"></div>
-             <div class="box" id="row9col5" onclick="makeMove('row9col5')"></div>
-             <div class="box" id="row9col6" onclick="makeMove('row9col6')"></div>
-             <div class="box" id="row9col7" onclick="makeMove('row9col7')"></div>
-             <div class="box" id="row9col8" onclick="makeMove('row9col8')"></div>
-             <div class="box" id="row9col9" onclick="makeMove('row9col9')"></div>
-             <div class="box" id="row9col10" onclick="makeMove('row9col10')"></div>
+						<div class="box" id="row9col1a" onclick="makeMove('row9col1a','ai')"></div>
+						 <div class="box" id="row9col2a" onclick="makeMove('row9col2a','ai')"></div>
+						 <div class="box" id="row9col3a" onclick="makeMove('row9col3a','ai')"></div>
+             <div class="box" id="row9col4a" onclick="makeMove('row9col4a','ai')"></div>
+             <div class="box" id="row9col5a" onclick="makeMove('row9col5a','ai')"></div>
+             <div class="box" id="row9col6a" onclick="makeMove('row9col6a','ai')"></div>
+             <div class="box" id="row9col7a" onclick="makeMove('row9col7a','ai')"></div>
+             <div class="box" id="row9col8a" onclick="makeMove('row9col8a','ai')"></div>
+             <div class="box" id="row9col9a" onclick="makeMove('row9col9a','ai')"></div>
+             <div class="box" id="row9col10a" onclick="makeMove('row9col10a','ai')">x</div>
             
 					</div>
           <div>
-						<div class="box" id="row10col1" onclick="makeMove('row10col1')"></div>
-						 <div class="box" id="row10col2" onclick="makeMove('row10col2')"></div>
-						 <div class="box" id="row10col3" onclick="makeMove('row10col3')"></div>
-             <div class="box" id="row10col4" onclick="makeMove('row10col4')"></div>
-             <div class="box" id="row10col5" onclick="makeMove('row10col5')"></div>
-             <div class="box" id="row10col6" onclick="makeMove('row10col6')"></div>
-             <div class="box" id="row10col7" onclick="makeMove('row10col7')"></div>
-             <div class="box" id="row10col8" onclick="makeMove('row10col8')"></div>
-             <div class="box" id="row10col9" onclick="makeMove('row10col9')"></div>
-             <div class="box" id="row10col10" onclick="makeMove('row10col10')"></div>
+						<div class="box" id="row10col1a" onclick="makeMove('row10col1a','ai')">x</div>
+						 <div class="box" id="row10col2a" onclick="makeMove('row10col2a','ai')"></div>
+						 <div class="box" id="row10col3a" onclick="makeMove('row10col3a','ai')"></div>
+             <div class="box" id="row10col4a" onclick="makeMove('row10col4a','ai')"></div>
+             <div class="box" id="row10col5a" onclick="makeMove('row10col5a','ai')"></div>
+             <div class="box" id="row10col6a" onclick="makeMove('row10col6a','ai')"></div>
+             <div class="box" id="row10col7a" onclick="makeMove('row10col7a','ai')"></div>
+             <div class="box" id="row10col8a" onclick="makeMove('row10col8a','ai')"></div>
+             <div class="box" id="row10col9a" onclick="makeMove('row10col9a','ai')"></div>
+             <div class="box" id="row10col10a" onclick="makeMove('row10col10a','ai')"></div>
             
 					</div>
 				 </div>
